@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# TensorFlow.js Image Recognition via Webcam
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a real-time image recognition application using TensorFlow.js with a live webcam feed. It utilizes a pre-trained MobileNet model for image classification and a KNN classifier to dynamically learn from the webcam input.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time Image Recognition**: Classifies images from the webcam in real-time.
+- **Interactive Learning**: Allows users to add new classifications on-the-fly.
+- **TensorFlow.js Integration**: Leverages the power of TensorFlow.js for in-browser machine learning.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy up and running, follow these simple steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js
+- npm or Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. #### Clone the repository:
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+2. #### Navigate to the project directory:
+```bash
+cd image-IA
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. #### Install the dependencies:
+```bash
+npm install
+```
+OR
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. #### To start the application, run:
+```bash
+npm start
+```
+OR
 
-### `npm run eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://reactjs.org/) - The web framework used for building the user interface.
+- [TensorFlow.js](https://www.tensorflow.org/js) - JavaScript library for training and deploying machine learning models in the browser.
+- [MobileNet](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) - A pre-trained model for efficient image classification.
+- [KNN Classifier](https://github.com/tensorflow/tfjs-models/tree/master/knn-classifier) - A dynamic learning classifier that allows for real-time training with new data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Extras
 
-## Learn More
+- **Customizable Training**: The application is designed to be flexible. Feel free to choose and train it according to your image needs. You can easily change the classes in the `knnClassifier` to suit different types of image recognition tasks. This feature allows you to experiment with various classifications and see how the model performs with different types of data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Interactive Learning**: Users can dynamically add new categories or examples to the classifier in real-time. This makes the app not only a tool for image recognition but also an interactive platform for understanding and exploring machine learning concepts.
