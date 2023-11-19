@@ -28,8 +28,6 @@ function Web() {
 					resolve()
 				}
 			})
-		} else {
-			throw new Error('Webcam not available')
 		}
 	}
 
